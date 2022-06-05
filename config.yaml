@@ -1,0 +1,37 @@
+baseurl: "https://lurenyang.com"
+languageCode: "en-us"
+title: "蛇鼠一窝"
+theme: "hugo-xmin"
+footnotereturnlinkcontents: "↩"
+
+permalinks:
+  note: "/note/:year/:month/:day/:slug/"
+  post: "/post/:year/:month/:day/:slug/"
+
+menu:
+  main:
+    - name: 主页
+      url: ""
+      weight: 1
+    - name: 分类
+      url: "categories/"
+      weight: 2
+    - name: 标签
+      url: "tags/"
+      weight: 3
+    - name: 关于
+      url: "about/"
+      weight: 4
+    - name: RSS
+      url: "index.xml"
+
+params:
+  description: "Record"
+  footer: "&copy; [Renyang Lu](https://lurenyang.com) 2017 -- {Year} "
+
+markup:
+  highlight:
+    codeFences: true
+  goldmark:
+    renderer:
+      unsafe: true
